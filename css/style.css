@@ -1,0 +1,105 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+form {
+    margin-left: 8%;
+    margin-right: 8%;
+}
+
+
+select, input {
+    width: 100%;
+    padding: 12px 0px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 2px solid #2d6fff;
+    border-radius: 4px;
+    box-sizing: border-box;
+    padding-left: 15px;
+    font-size: 15px;
+}
+
+
+/* input[type=text], select, input[type=date] {
+    width: 100%;
+    padding: 12px 0px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 2px solid #2d6fff;
+    border-radius: 4px;
+    box-sizing: border-box;
+    padding-left: 15px;
+} */
+
+label {
+    width: 100%;
+    margin-top: 20px;
+    display: inline-block;
+    box-sizing: border-box;
+}
+
+#img_campus_eductive {
+    margin-top: 25px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 25%;
+    border-radius: 5px;
+}
+
+footer {
+    margin-top: 100px;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+footer p {
+    color: #2d6fff;
+}
+
+footer p a {
+    text-decoration: underline;
+    color: #3a50cc;
+}
+
+.etoiles_req {
+    color: red;
+}
+
+/* done.html */
+.done_inscr {
+    margin-top: 150px;
+    text-align: center;
+    font-size: 22px;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+#img_done {
+    margin-top: 15px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 20%;
+    margin-bottom: 150px;
+}
+
+@media screen and (min-width: 700px) {
+    form {
+        margin-left: 30%;
+        margin-right: 30%;
+    }
+
+    #img_campus_eductive {
+        margin-top: 25px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 11%;
+        border-radius: 5px;
+        margin-bottom: 50px;
+    }
+}

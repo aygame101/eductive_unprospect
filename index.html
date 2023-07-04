@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/button.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+
+    <script src="js/index_html.js"></script>
+
+    <title>Eductive</title>
+</head>
+<body>
+
+    <img src="img/campus_eductive.png" alt="Logo du campus eductive reims" id="img_campus_eductive">
+
+    <form action="traitement.php" method="POST">
+
+        <label for="ecole_id">Ecole souhaitée : <span class="etoiles_req">*</span></label>
+        <select name="ecole" id="ecole_id" onchange="updateChamp()" required>
+            <option id="PPA" value="PPA">PPA</option>
+            <option id="Esupcom" value="Esupcom">Esupcom</option>
+            <option value="efab">EFAB</option>
+            <option value="PPA_sport">PPA Sport</option>
+            <option id="ESGI" value="ESGI">ESGI</option>
+            <option value="Maestris_bts">Maestris BTS</option>
+            <option value="Efet_studio_crea">Efet Studio Créa</option>
+        </select>
+
+        <label for="specialite_id">Spécialité choisie : <span class="etoiles_req">*</span></label>
+        <select name="specialite" id="specialite_id" required>
+            <option value="management_commercial_(bac+1_à_bac+3)">Management Commercial (bac+1 à bac+3)</option>
+            <option value="tronc_commun_(bac+1_à_bac+3)">Tronc Commun (bac+1 à bac+2)</option>
+        </select>
+
+        <label for="civilite_id">Civilité : <span class="etoiles_req">*</span></label>
+        <select name="civilite" id="civilite_id" required>
+            <option value="homme">Homme</option>
+            <option value="femme">Femme</option>
+        </select>
+
+        <label for="date_naissance_id">Date de naissance : <span class="etoiles_req">*</span></label>
+        <input type="date" name="date_naissance" id="civilite_id" required>
+
+        <label for="nom_id">Nom : <span class="etoiles_req">*</span></label>
+        <input type="text" name="nom" id="nom_id" required> 
+
+        <label for="prenom_id">Prénom : <span class="etoiles_req">*</span></label>
+        <input type="text" name="prenom" id="prenom_id" required>
+
+        <label for="adresse_id">Adresse : <span class="etoiles_req">*</span></label>
+        <input type="text" name="adresse" id="adresse_id" required>
+
+        <label for="code_postal_id">Code Postal : <span class="etoiles_req">*</span></label>
+        <input type="number" name="code_postal" id="code_postal_id" class="input_no_text"required>
+
+        <label for="ville_id">Ville : <span class="etoiles_req">*</span></label>
+        <input type="text" name="ville" id="ville_id" required>
+
+        <label for="email_id">Email : <span class="etoiles_req">*</span></label>
+        <input type="email" name="email" id="email_id" required>
+
+        <label for="telephone_id">Numéro de téléphone : <span class="etoiles_req">*</span></label>
+        <input type="number" name="telephone" id="telephone_id" required>
+
+        <label for="niv_etude_actuel_id">Niveau d'étude actuel :</label>
+        <input type="text" name="niv_etude_actuel" id="niv_etude_actuel_id">
+
+        <label for="etab_actuel_id">Etablissement actuel :</label>
+        <input type="text" name="etab_actuel" id="etab_actuel_id">
+
+        <label for="projet_pro_id">Projet Professionnel :</label>
+        <input type="text" name="projet_pro" id="projet_pro_id">
+        
+
+        <input class="le_bouton" type="submit" value="Valider">
+
+
+    </form>
+    
+    <footer>
+        <p class="footer">Created with <span style="color: #ff0000">&hearts;</span> by <a id="a_footer" href="https://ginovalton.fr">www.ginovalton.fr</a></p>
+        <p>Take care.</p>
+    </footer>
+    
+</body>
+</html>
