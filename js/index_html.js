@@ -35,7 +35,7 @@
 // Mastère Sécurité Informatique (bac+4 à bac+5)
 // Mastère Systèmes, Réseaux et Cloud Computing (bac+4 à bac+5)
 
-// Maestris BTS
+// Maestris BTS :
 // BTS Communication
 // BTS Management commercial opérationnel
 // BTS Négociation et Digitalisation de la Relation Client
