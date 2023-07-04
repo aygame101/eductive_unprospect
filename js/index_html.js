@@ -55,7 +55,7 @@ function updateChamp() {
     champ2.innerHTML = "";
     
     // Ajouter les nouvelles options en fonction de la sélection du champ1
-    if (champ1.value === "ppa") {
+    if (champ1.id === "ppa") {
       var opt1_1 = new Option("Management Commercial (bac+1 à bac+3)", "management_commercial");
       var opt1_2 = new Option("Marketing (bac+1 à bac+3)", "marketing");
       var opt1_3 = new Option("Finance (bac+1 à bac+3)", "finance");
@@ -70,7 +70,7 @@ function updateChamp() {
       champ2.add(opt1_5);
       champ2.add(opt1_6);
       champ2.add(opt1_7);
-    } else if (champ1.value === "esupcom") {
+    } else if (champ1.id === "esupcom") {
       var opt2_1 = new Option("Communication global (bac+1 et bac+2)", "communication_global");
       var opt2_2 = new Option("Bachelor Communication des Marques et des Entreprises (bac+3)", "communication_marques");
       var opt2_3 = new Option("Bachelor Communication digitale et publicité (bac+3)", "communication_digitale");
@@ -85,7 +85,7 @@ function updateChamp() {
       champ2.add(opt2_5);
       champ2.add(opt2_6);
       champ2.add(opt2_7);
-    } else if (champ1.value === "efab") {
+    } else if (champ1.id === "efab") {
       var opt3_1 = new Option("Bachelor Immobilier (bac+1 à bac+2)", "immobilier");
       var opt3_2 = new Option("BTS Professions Immobilieres (bac+1 à bac+2)", "bts_immobilier");
       var opt3_3 = new Option("Bachelor Gestionnaire et Parc Immobilier (bac+3)", "gestionnaire_immobilier");
@@ -101,10 +101,10 @@ function updateChamp() {
       champ2.add(opt3_6);
       champ2.add(opt3_7);
     }
-    else if (champ1.value === "ppa_sport") {
+    else if (champ1.id === "ppa_sport") {
       var opt4_1 = new Option("Général", "general");
       champ2.add(opt4_1);
-    } else if (champ1.value === "esgi") {
+    } else if (champ1.id === "esgi") {
       var opt5_1 = new Option("Tronc Commun (bac+1 à bac+2)", "tronc_commun");
       var opt5_2 = new Option("Bachelor Sécurité Informatique (bac+3)", "securite_informatique");
       var opt5_3 = new Option("Bachelor Systèmes, Réseaux et Cloud Computing (bac +3)", "systemes_reseaux");
@@ -115,7 +115,7 @@ function updateChamp() {
       champ2.add(opt5_3);
       champ2.add(opt5_4);
       champ2.add(opt5_5);
-    } else if (champ1.value === "maestris_bts") {
+    } else if (champ1.id === "maestris_bts") {
       var opt6_1 = new Option("BTS Communication", "bts_communication");
       var opt6_2 = new Option("BTS Management commercial opérationnel", "bts_management_commercial");
       var opt6_3 = new Option("BTS Négociation et digitalisation de la relation client", "bts_negociation");
@@ -130,7 +130,7 @@ function updateChamp() {
       champ2.add(opt6_5);
       champ2.add(opt6_6);
       champ2.add(opt6_7);
-    } else if (champ1.value === "effet_studio_crea") {
+    } else if (champ1.id === "effet_studio_crea") {
       var opt7_1 = new Option("Général", "general");
       champ2.add(opt7_1);
     }
