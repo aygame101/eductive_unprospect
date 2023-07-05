@@ -56,6 +56,7 @@ function updateChamp() {
     
     // Ajouter les nouvelles options en fonction de la sélection du champ1
     if (champ1.value === "PPA") {
+
       var opt1_1 = new Option("Management Commercial (bac+1 à bac+3)", "management_commercial");
       var opt1_2 = new Option("Marketing (bac+1 à bac+3)", "marketing");
       var opt1_3 = new Option("Finance (bac+1 à bac+3)", "finance");
@@ -85,7 +86,7 @@ function updateChamp() {
       champ2.add(opt2_5);
       champ2.add(opt2_6);
       champ2.add(opt2_7);
-    } else if (champ1.value === "EFAB") {
+    } else if (champ1.value === "efab") {
       var opt3_1 = new Option("Bachelor Immobilier (bac+1 à bac+2)", "immobilier");
       var opt3_2 = new Option("BTS Professions Immobilieres (bac+1 à bac+2)", "bts_immobilier");
       var opt3_3 = new Option("Bachelor Gestionnaire et Parc Immobilier (bac+3)", "gestionnaire_immobilier");
