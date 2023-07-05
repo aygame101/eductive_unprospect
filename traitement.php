@@ -3,6 +3,7 @@
 
 // Get the data from the form
 $ecole = nl2br(htmlspecialchars($_POST['ecole']));
+$specialite = nl2br(htmlspecialchars($_POST('specialite')))
 $civilite = nl2br(htmlspecialchars($_POST['civilite']));
 $date_naissance = nl2br(htmlspecialchars($_POST['date_naissance']));
 $nom = nl2br(htmlspecialchars($_POST['nom']));
@@ -32,9 +33,10 @@ try
 }
 
 // Insert into database
-$req = $bdd->prepare('INSERT INTO eductive(ecole, civilite, date_naissance, nom, prenom, adresse, code_postal, ville, email, telephone, niv_etude_actuel, etab_actuel, projet_pro) VALUES(:ecole, :civilite, :date_naissance, :nom, :prenom, :adresse, :code_postal, :ville, :email, :telephone, :niv_etude_actuel, :etab_actuel, :projet_pro');
+$req = $bdd->prepare('INSERT INTO eductive(ecole, specialite, civilite, date_naissance, nom, prenom, adresse, code_postal, ville, email, telephone, niv_etude_actuel, etab_actuel, projet_pro) VALUES(:ecole, :specialite, :civilite, :date_naissance, :nom, :prenom, :adresse, :code_postal, :ville, :email, :telephone, :niv_etude_actuel, :etab_actuel, :projet_pro');
 $req->execute(array(
     'ecole' => $ecole,
+    'specialite' => $specialite,
     'civilite' => $civilite,
     'date_naissance' => $date_naissance,
     'nom' => $nom,
