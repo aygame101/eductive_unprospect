@@ -36,7 +36,7 @@ $_SESSION['last_activity'] = time();
 <body>
     <h1 class="titre_conn">Exportation vers Excel</h1>
     <form action="export.php" method="post">
-        <input type="hidden" name="table" value="eductive"> <!-- Remplacer "value" par le nom de la table à exporter -->
+        <input type="hidden" name="table" value="eductive"> <!-- Remplacer "users" par le nom de la table à exporter -->
         <input type="submit" value="Exporter" id="export_btn">
     </form>
 

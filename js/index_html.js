@@ -47,6 +47,7 @@
 // EFET STUDIO CREA :
 // General
 
+
 function updateChamp() {
     var champ1 = document.getElementById("ecole_id");
     var champ2 = document.getElementById("specialite_id");

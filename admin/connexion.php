@@ -1,5 +1,4 @@
 <?php
-
 require_once('hera.php');
 
 session_start();
@@ -15,14 +14,20 @@ if (!isset($_SESSION['login_attempts'])) {
     $_SESSION['login_attempts'] = 0;
 }
 
+// Initialiser la variable pour stocker la valeur de l'identifiant
+$identifiant_saisi = '';
+
 // Vérifier si le formulaire de connexion est soumis
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     // Vérifier les identifiants de connexion
     $identifiant = $_POST['identifiant'] ?? '';
     $mdp = $_POST['mdp'] ?? '';
 
+    // Stocker la valeur de l'identifiant saisie
+    $identifiant_saisi = $identifiant;
+
     // Vérifier si les identifiants sont corrects
-    if (($identifiant === "user472243" && hash('sha256', $mdp) === $PASSWORD_ONE) || ($identifiant === "admin642357" && hash('sha256', $mdp) === $PASSWORD_TWO)) {
+    if ($identifiant === "user472243" && hash('sha256', $mdp) === $PASSWORD_ONE) {
         // Réinitialiser le compteur de tentatives
         $_SESSION['login_attempts'] = 0;
         $_SESSION['connected'] = true;
@@ -53,8 +58,6 @@ if ($_SESSION['login_attempts'] >= 5) {
         $_SESSION['login_attempts'] = 0;
         exit();
 }
-
-
 ?>
 
 <!DOCTYPE html>
@@ -71,7 +74,7 @@ if ($_SESSION['login_attempts'] >= 5) {
         <p id="error_conn"><?php echo $erreur; ?></p>
     <?php } ?>
     <form action="connexion.php" method="post">
-        <input class="buttons_conn" type="text" name="identifiant" placeholder="Identifiant" required><br>
+        <input class="buttons_conn" type="text" name="identifiant" placeholder="Identifiant" required value="<?php echo htmlspecialchars($identifiant_saisi); ?>"><br>
         <input class="buttons_conn" type="password" name="mdp" placeholder="Mot de passe" required><br>
         <input type="submit" value="Se connecter" id="connect_btn">
     </form>

@@ -7,9 +7,3 @@ function masquerMessageErreur() {
         messageErreur.style.display = "none";
     }, 2000); // 3000 millisecondes = 3 secondes
 }
-
-
-function test() {
-    // Code pour supprimer les données de la table ici
-    alert("ttttt");
-}

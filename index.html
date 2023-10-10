@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <meta charset="UTF-8">
+    <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
@@ -34,13 +34,13 @@
 
         <label for="specialite_id">Spécialité choisie : <span class="etoiles_req">*</span></label>
         <select name="specialite" id="specialite_id" required>
-            <option value="management_commercial">Management Commercial (bac+1 à bac+3)</option>
-            <option value="marketing">Marketing (bac+1 à bac+3)</option>
-            <option value="finance">Finance (bac+1 à bac+3)</option>
-            <option value="conseil_audit">Conseil, Audit et controle de gestion (bac+1 à bac+3)</option>
-            <option value="rh">RH (à partir de bac+3)</option>
-            <option value="supply_chain">Supply Chain (à partir de bac+3)</option>
-            <option value="business_development">Business Development (à partir de bac+4)</option>
+            <option value="Management Commercial (bac+1 à bac+3)">Management Commercial (bac+1 à bac+3)</option>
+            <option value="Marketing (bac+1 à bac+3)">Marketing (bac+1 à bac+3)</option>
+            <option value="Finance (bac+1 à bac+3)">Finance (bac+1 à bac+3)</option>
+            <option value="Conseil, Audit et controle de gestion (bac+1 à bac+3)">Conseil, Audit et controle de gestion (bac+1 à bac+3)</option>
+            <option value="RH (à partir de bac+3)">RH (à partir de bac+3)</option>
+            <option value="Supply Chain (à partir de bac+3)">Supply Chain (à partir de bac+3)</option>
+            <option value="Business Development (à partir de bac+4)">Business Development (à partir de bac+4)</option>
         </select>
 
         <label for="civilite_id">Civilité : <span class="etoiles_req">*</span></label>
@@ -62,7 +62,7 @@
         <input type="text" name="adresse" id="adresse_id" required>
 
         <label for="code_postal_id">Code Postal : <span class="etoiles_req">*</span></label>
-        <input type="number" name="code_postal" id="code_postal_id" class="input_no_text"required>
+        <input type="number" onkeydown="return event.keyCode !== 69" name="code_postal" id="code_postal_id" class="input_no_text"required>
 
         <label for="ville_id">Ville : <span class="etoiles_req">*</span></label>
         <input type="text" name="ville" id="ville_id" required>
@@ -71,7 +71,7 @@
         <input type="email" name="email" id="email_id" required>
 
         <label for="telephone_id">Numéro de téléphone : <span class="etoiles_req">*</span></label>
-        <input type="number" name="telephone" id="telephone_id" required>
+        <input type="number" onkeydown="return event.keyCode !== 69" name="telephone" id="telephone_id" required>
 
         <label for="niv_etude_actuel_id">Niveau d'étude actuel :</label>
         <input type="text" name="niv_etude_actuel" id="niv_etude_actuel_id">
