@@ -14,27 +14,35 @@ $req = $bdd->query("SELECT * FROM $table");
 // Création du fichier CSV
 $filename = "export_$table.csv";
 
-header("Content-Type: text/csv");
+header('Content-type: text/csv; charset=UTF-8');
+echo "\xEF\xBB\xBF"; // UTF-8 BOM
 header("Content-Disposition: attachment; filename=\"$filename\"");
 
 // Génération du contenu CSV
 $output = fopen("php://output", "w");
 
-// Écriture des en-têtes
-$header = array_keys($req->fetch(PDO::FETCH_ASSOC));
-fputcsv($output, $header, ";"); // Utilisation du point-virgule (;) comme délimiteur de champ
+// Vérifier si la requête a renvoyé des résultats
+if ($req->rowCount() > 0) {
+    // Écriture des en-têtes
+    $header = array_keys($req->fetch(PDO::FETCH_ASSOC));
+    fputcsv($output, $header, ";"); // Utilisation du point-virgule (;) comme délimiteur de champ
 
-// Réinitialisation de la requête pour récupérer les données
-$req = $bdd->query("SELECT * FROM $table");
+    // Réinitialisation de la requête pour récupérer les données
+    $req = $bdd->query("SELECT * FROM $table");
 
-// Écriture des données
-while ($row = $req->fetch(PDO::FETCH_ASSOC)) {
-    // Remplacer toutes les virgules (,) par des points-virgules (;) dans les valeurs des colonnes
-    $row = array_map(function($value) {
-        return str_replace(",", ";", $value);
-    }, $row);
+    // Écriture des données
+    while ($row = $req->fetch(PDO::FETCH_ASSOC)) {
+        // Remplacer "&#039;" par une apostrophe ('), puis toutes les virgules (,) par des points-virgules (;) dans les valeurs des colonnes
+        $row = array_map(function($value) {
+            $value = str_replace("&#039;", "'", $value);
+            return str_replace(",", ";", $value);
+        }, $row);
 
-    fputcsv($output, $row, ";");
+        fputcsv($output, $row, ";");
+    }
+} else {
+    // Si la table est vide, vous pouvez éventuellement écrire un message d'erreur ou gérer cette situation d'une autre manière.
+    echo "La table est vide.";
 }
 
 fclose($output);

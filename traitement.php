@@ -18,14 +18,12 @@ $etab_actuel = nl2br(htmlspecialchars($_POST['etab_actuel']));
 $projet_pro = nl2br(htmlspecialchars($_POST['projet_pro']));
 
 // Connexion bdd
-$user = "prospect"; // nom d'utilisateur
-$mdp = "33nzt82D3S3Wku5FZhmR"; // mot de passe
+require_once('admin/hestia.php');
 
 //bcrypt // sel
-
 try
 {
-    $bdd = new PDO ('mysql:host=localhost;dbname=prospect', $user, $mdp);
+    $bdd = new PDO("mysql:host=$host;dbname=$dbname;charset=utf8", $username, $password);
 } catch (PDOException $e)
 {
     print "Erreur :" . $e->getMessage() . "<br/>";
@@ -51,13 +49,14 @@ $req->execute(array(
     'projet_pro' => $projet_pro
 ));
 
-if (!$req->execute(array(
-    'ecole' => $ecole,
-    'specialite' => $specialite,
-    'projet_pro' => $projet_pro,
-))) {
-    print_r($req->errorInfo());
-}
+// mis en commentaire ça, et ça marche 9/10/23
+//if (!$req->execute(array(
+//    'ecole' => $ecole,
+//    'specialite' => $specialite,
+//    'projet_pro' => $projet_pro,
+//))) {
+//    print_r($req->errorInfo());
+//}
 
 
 // Redirect to the done page

@@ -1,10 +1,13 @@
 <?php
+
+require_once('hestia.php');
+
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     // Récupérer le nom de la table à vider
     $table = $_POST['table'];
 
     // Effectuer la connexion à la base de données
-    $pdo = new PDO('mysql:host=localhost;dbname=prospect', 'prospect', '33nzt82D3S3Wku5FZhmR');
+    $pdo = new PDO("mysql:host=$host;dbname=$dbname", $username, $password);
 
     // Exécuter la requête TRUNCATE sur la table spécifiée
     //$stmt = $bdd->prepare("TRUNCATE TABLE '$table'");
