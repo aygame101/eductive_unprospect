@@ -36,7 +36,7 @@
             <option id="isfj" value="ISFJ">ISFJ</option>
         </select>
 
-            <!-- En quelle année souhaiteriez-vous candidater ? NOT WORKING FOR NOW -->
+        <!-- En quelle année souhaiteriez-vous candidater ? NOT WORKING FOR NOW --> <!-- A RELIER A LA BDD -->
         <label for="annee_id">En quelle année souhaiteriez-vous candidater ? <span class="etoiles_req">*</span></label>
         <select name="annee" id="annee_id" required>
             <option id="bac_1" value="Bac +1">Bac +1</option>
@@ -96,6 +96,7 @@
         <label for="projet_pro_id">Projet Professionnel :</label>
         <input type="text" name="projet_pro" id="projet_pro_id">
 
+        <!-- A RELIER A LA BDD -->
         <label for="annee_id">Je souhaite m'inscrire à une date de concours :</label>
         <select name="annee" id="annee_id">
             <option id="non_dispo" value="-">-</option>
@@ -106,13 +107,15 @@
        
         <!-- Acceptation traitement données par rapport RGPD -->
 
-        <input class="le_bouton" type="submit" value="Valider">
-
+        <label for="input_final">En soumettant ce formulaire, j'accepte que mes informations soient utilisées exclusivement
+            dans le cadre de ma demande det de la relation commerciale éthique et personnalisé qui pourrait en découler.
+        </label>
+        <input id="input_final" class="le_bouton" type="submit" value="Valider">
 
     </form>
     
     <footer>
-        <p class="footer">Created with <span style="color: #ff0000">&hearts;</span> by <a id="a_footer" href="https://ginovalton.fr">www.ginovalton.fr</a></p>
+        <p class="footer">Created with <span style="color: #ff0000">&hearts;</span> by <a id="a_footer" href="https://ginovalton.fr">ginovalton.fr</a></p>
         <p>Take care.</p>
     </footer>
     
