@@ -78,18 +78,16 @@ function updateChamp() {
     // Ajouter les nouvelles options en fonction de la sélection du champ1
     if (champ1.value === "PPA") {
 
-      var opt1_1 = new Option("Management Commercial (bac+1 à bac+3)", "Management Commercial (bac+1 à bac+3)");
-      var opt1_2 = new Option("Marketing (bac+1 à bac+3)", "Marketing (bac+1 à bac+3)");
-      var opt1_3 = new Option("Finance (bac+1 à bac+3)", "Finance (bac+1 à bac+3)");
-      var opt1_4 = new Option("Conseil, Audit et controle de gestion (bac+1 à bac+3)", "Conseil, Audit et controle de gestion (bac+1 à bac+3)");
-      var opt1_5 = new Option("RH (à partir de bac+3)", "RH (à partir de bac+3)");
-      var opt1_6 = new Option("Supply Chain (à partir de bac+3)", "Supply Chain (à partir de bac+3)");
-      var opt1_7 = new Option("Business Development (à partir de bac+4)", "Business Development (à partir de bac+4)");
+      var opt1_1 = new Option("Management Commercial", "Management Commercial");
+      var opt1_2 = new Option("Marketing", "Marketing");
+      var opt1_3 = new Option("Ressources Humaines", "Ressources Humaines");
+      var opt1_4 = new Option("Business Development (Bac +4)", "Business Development (Bac +4)");
+      var opt1_6 = new Option("Supply Chain", "Supply Chain");
+      var opt1_7 = new Option("Finance", "Finance");
       champ2.add(opt1_1);
       champ2.add(opt1_2);
       champ2.add(opt1_3);
       champ2.add(opt1_4);
-      champ2.add(opt1_5);
       champ2.add(opt1_6);
       champ2.add(opt1_7);
     } else if (champ1.value === "Esupcom") {
