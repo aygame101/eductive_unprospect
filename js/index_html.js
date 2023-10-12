@@ -36,7 +36,7 @@
 // Mastère Systèmes, Réseaux et Cloud Computing (bac+4 à bac+5)
 
 // Maestris BTS :
-// BTS Communication
+// BTS Communication 
 // BTS Management commercial opérationnel
 // BTS Négociation et Digitalisation de la Relation Client
 // BTS Assurance
@@ -47,6 +47,26 @@
 // EFET STUDIO CREA :
 // General
 
+
+// <!-- ISA, EIML, Modart, ISFJ -->
+// ISA
+// BTS Métier de l'audio visuel, Option Montage (bac +1)
+// BTS Métier de l'audio visuel, Option Gestion de projet (bac +1)
+// BTS Métier de l'audio visuel, Option Image (bac +1)
+// BTS Métier de l'audio visuel, Option Son (bac +1)
+
+// Modart
+// Bachelor Stylisme et Modélisme (bac +1)
+
+// EIML
+// Bachelor Retail (bac +1)
+// Bachelor Marketing du luxe (bac +1)
+// Bachelor Retail (bac +3)
+// Bachelor Marketing du luve (bac +3)
+
+// ISFJ
+// Bachelor Journalisme (bac +1)
+// Bachelor Journalisme (bac +3)
 
 function updateChamp() {
     var champ1 = document.getElementById("ecole_id");

@@ -30,7 +30,13 @@
             <option id="esgi" value="ESGI">ESGI</option>
             <option id="maestris_bts" value="Maestris_bts">Maestris BTS</option>
             <option id="efet_studio_crea" value="Efet_studio_crea">Efet Studio Créa</option>
+            <!-- ISA, 
+                EIML, 
+                Modart, 
+                ISFJ -->
         </select>
+
+            <!-- En quelle année souhaiteriez-vous candidater ? -->
 
         <label for="specialite_id">Spécialité choisie : <span class="etoiles_req">*</span></label>
         <select name="specialite" id="specialite_id" required>
@@ -75,14 +81,20 @@
 
         <label for="niv_etude_actuel_id">Niveau d'étude actuel :</label>
         <input type="text" name="niv_etude_actuel" id="niv_etude_actuel_id">
+        
+        <!-- Niveau d'étude actuel et Etablissement actuel OBLIGATOIRE -->
 
         <label for="etab_actuel_id">Etablissement actuel :</label>
         <input type="text" name="etab_actuel" id="etab_actuel_id">
 
         <label for="projet_pro_id">Projet Professionnel :</label>
         <input type="text" name="projet_pro" id="projet_pro_id">
-        
 
+        <!-- Je souhaite m'inscrire à une date de concours
+        options à reprendre sur le pdf en optionnel -->
+        
+        <!-- Acceptation traitement données par rapport RGPD -->
+        
         <input class="le_bouton" type="submit" value="Valider">
 
 

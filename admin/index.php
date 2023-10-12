@@ -47,6 +47,8 @@ $_SESSION['last_activity'] = time();
         <button id="suppr_confirm_btn" onclick="deleteTable()">Confirmer</button>
     </div>
 
+    <!-- CRUD Affichage données BDD -->
+
     <form action="deconnexion.php" method="post">
         <input type="submit" value="Déconnexion" id="deco_btn">
     </form>
