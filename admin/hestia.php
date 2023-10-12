@@ -1,7 +1,7 @@
 <?php
 // IDENTIFIANTS BDD
-$host = "";
-$dbname = "";
-$username = "";
+$host = "localhost";
+$dbname = "prospect";
+$username = "root";
 $password = "";
 ?>
