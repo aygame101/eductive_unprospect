@@ -1,6 +1,6 @@
 <?php
 // IDENTIFIANTS BDD
-$host = "localhost";
+$host = "";
 $dbname = "";
 $username = "";
 $password = "";
