@@ -187,17 +187,15 @@ function updateChamp() {
       var opt6_1 = new Option("BTS Communication", "BTS Communication");
       var opt6_2 = new Option("BTS Management commercial opérationnel", "BTS Management commercial opérationnel");
       var opt6_3 = new Option("BTS Négociation et digitalisation de la relation client", "BTS Négociation et digitalisation de la relation client");
-      var opt6_4 = new Option("BTS Assurance", "BTS Assurance");
-      var opt6_5 = new Option("BTS Banque et relation client", "BTS Banque et relation client");
       var opt6_6 = new Option("BTS Comptabilité et gestion", "BTS Comptabilité et gestion");
-      var opt6_7 = new Option("BTS Services informatiques aux organisations", "BTS Services informatiques aux organisations");
       champ2.add(opt6_1);
       champ2.add(opt6_2);
       champ2.add(opt6_3);
-      champ2.add(opt6_4);
-      champ2.add(opt6_5);
       champ2.add(opt6_6);
-      champ2.add(opt6_7);
+      var opt6_11 = new Option("Bac +1 (Alternance)", "Bac +1 (Alternance)");
+      annee.add(opt6_11);
+
+      
     } else if (champ1.value === "Efet Studio Créa") {
       var opt7_1 = new Option("Général", "Général");
       champ2.add(opt7_1);
