@@ -150,10 +150,8 @@ function updateChamp() {
       annee.add(opt3_13);
       annee.add(opt3_14);
 
-
       
-    }
-    else if (champ1.value === "PPA Sport") {
+    } else if (champ1.value === "PPA Sport") {
       var opt4_1 = new Option("Général", "Général");
       champ2.add(opt4_1);
     } else if (champ1.value === "ESGI") {
