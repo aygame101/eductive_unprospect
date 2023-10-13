@@ -127,20 +127,31 @@ function updateChamp() {
 
 
     } else if (champ1.value === "EFAB") {
-      var opt3_1 = new Option("Bachelor Immobilier (bac+1 à bac+2)", "Bachelor Immobilier (bac+1 à bac+2)");
-      var opt3_2 = new Option("BTS Professions Immobilieres (bac+1 à bac+2)", "BTS Professions Immobilieres (bac+1 à bac+2)");
-      var opt3_3 = new Option("Bachelor Gestionnaire et Parc Immobilier (bac+3)", "Bachelor Gestionnaire et Parc Immobilier (bac+3)");
-      var opt3_4 = new Option("Bachelor Conseiller et Investissement Immobilier (bac+3)", "Bachelor Conseiller et Investissement Immobilier (bac+3)");
-      var opt3_5 = new Option("Mastère Manager en Promotion Immobilière (bac+4 à bac+5)", "Mastère Manager en Promotion Immobilière (bac+4 à bac+5)");
-      var opt3_6 = new Option("Mastère Manager en Patrimoine Immobilier et Financier (bac+4 à bac+5)", "Mastère Manager en Patrimoine Immobilier et Financier (bac+4 à bac+5)");
-      var opt3_7 = new Option("Mastère Manager d'Actifs Immobiliers (bac+4 à bac+5)", "Mastère Manager d'Actifs Immobiliers (bac+4 à bac+5)");
+      var opt3_1 = new Option("BTS Professions Immobilieres (Bac+1)", "BTS Professions Immobilieres (Bac+1)");
+      var opt3_3 = new Option("Bachelor Gestionnaire de Parcs Immobiliers (Bac+3)", "Bachelor Gestionnaire de Parcs Immobiliers (Bac+3)");
+      var opt3_4 = new Option("Bachelor Conseiller en Investissement Immobilier (Bac+3)", "Bachelor Conseiller en Investissement Immobilier (Bac+3)");
+      var opt3_5 = new Option("Bachelor Immobilier (Bac +1/2)", "Bachelor Immobilier (Bac +1/2)");
+      var opt3_6 = new Option("Mastère Manager en Patrimoine Immobilier et Financier (Bac+4)", "Mastère Manager en Patrimoine Immobilier et Financier (Bac+4)");
+      var opt3_7 = new Option("Mastère Manager d'Actifs Immobiliers (Bac+4)", "Mastère Manager d'Actifs Immobiliers (Bac+4)");
       champ2.add(opt3_1);
-      champ2.add(opt3_2);
       champ2.add(opt3_3);
       champ2.add(opt3_4);
       champ2.add(opt3_5);
       champ2.add(opt3_6);
       champ2.add(opt3_7);
+      var opt3_10 = new Option("BTS, Bac+1", "BTS, Bac+1");
+      var opt3_11 = new Option("Bachelor, Bac +1 (Initial)", "Bachelor, Bac +1 (Initial)");
+      var opt3_12 = new Option("Bachelor, Bac +2 (Alternance)", "Bachelor, Bac +2 (Alternance)");
+      var opt3_13 = new Option("Bachelor, Bac +3 (Alternance)", "Bachelor, Bac +3 (Alternance)");
+      var opt3_14 = new Option("Mastère, Bac +4 (Alternance)", "Mastère, Bac +4 (Alternance)");
+      annee.add(opt3_10);
+      annee.add(opt3_11);
+      annee.add(opt3_12);
+      annee.add(opt3_13);
+      annee.add(opt3_14);
+
+
+      
     }
     else if (champ1.value === "PPA Sport") {
       var opt4_1 = new Option("Général", "Général");
