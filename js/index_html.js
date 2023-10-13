@@ -91,10 +91,10 @@ function updateChamp() {
       champ2.add(opt1_4);
       champ2.add(opt1_6);
       champ2.add(opt1_7);
-      var opt1_10 = new Option("Bac +1", "Bac +1");
-      var opt1_11 = new Option("Bac +2", "Bac +2");
-      var opt1_12 = new Option("Bac +3", "Bac +3");
-      var opt1_13 = new Option("Bac +4", "Bac +4");
+      var opt1_10 = new Option("Bac +1 (Alternance)", "Bac +1 (Alternance)");
+      var opt1_11 = new Option("Bac +2 (Alternance)", "Bac +2 (Alternance)");
+      var opt1_12 = new Option("Bac +3 (Alternance)", "Bac +3 (Alternance)");
+      var opt1_13 = new Option("Bac +4 (Alternance)", "Bac +4 (Alternance)");
       annee.add(opt1_10);
       annee.add(opt1_11);
       annee.add(opt1_12);
@@ -207,6 +207,7 @@ function updateChamp() {
       annee.add(opt7_12);
       annee.add(opt7_13);
       annee.add(opt7_14);
+
 
     }
 }
