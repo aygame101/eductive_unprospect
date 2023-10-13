@@ -150,21 +150,39 @@ function updateChamp() {
       annee.add(opt3_13);
       annee.add(opt3_14);
 
-      
+
     } else if (champ1.value === "PPA Sport") {
-      var opt4_1 = new Option("Général", "Général");
+      var opt4_1 = new Option("Marketing et Communication dans le sport", "Marketing et Communication dans le sport");
       champ2.add(opt4_1);
+      var opt4_11 = new Option("Bac +1 (Alternance)", "Bac +1 (Alternance)");
+      var opt4_12 = new Option("Bac +2 (Alternance)", "Bac +2 (Alternance)");
+      var opt4_13 = new Option("Bac +3 (Alternance)", "Bac +3 (Alternance)");
+      var opt4_14 = new Option("Bac +4 (Alternance)", "Bac +4 (Alternance)");
+      annee.add(opt4_11);
+      annee.add(opt4_12);
+      annee.add(opt4_13);
+      annee.add(opt4_14);
+
+
     } else if (champ1.value === "ESGI") {
-      var opt5_1 = new Option("Tronc Commun (bac+1 à bac+2)", "Tronc Commun (bac+1 à bac+2)");
-      var opt5_2 = new Option("Bachelor Sécurité Informatique (bac+3)", "Bachelor Sécurité Informatique (bac+3)");
-      var opt5_3 = new Option("Bachelor Systèmes, Réseaux et Cloud Computing (bac +3)", "Bachelor Systèmes, Réseaux et Cloud Computing (bac +3)");
-      var opt5_4 = new Option("Mastère Sécurité Informatique (bac+4 à bac+5)", "Mastère Sécurité Informatique (bac+4 à bac+5)");
-      var opt5_5 = new Option("Mastère Systèmes, Réseaux et Cloud Computing (bac+4 à bac+5)", "Mastère Systèmes, Réseaux et Cloud Computing (bac+4 à bac+5)");
+      var opt5_1 = new Option("Sécurité Informatique", "Sécurité Informatique");
+      var opt5_2 = new Option("Systèmes Réseaux et Cloud Computing", "Systèmes Réseaux et Cloud Computing");
+      var opt5_3 = new Option("Architecture des logiciels", "Architecture des logiciels");
+      var opt5_4 = new Option("Ingénierie du Web", "Ingénierie du Web");
       champ2.add(opt5_1);
       champ2.add(opt5_2);
       champ2.add(opt5_3);
       champ2.add(opt5_4);
-      champ2.add(opt5_5);
+      var opt5_11 = new Option("Bac +1 (Initial)", "Bac +1 (Initial)");
+      var opt5_12 = new Option("Bac +2 (Alternance)", "Bac +2 (Alternance)");
+      var opt5_13 = new Option("Bac +3 (Alternance)", "Bac +3 (Alternance)");
+      var opt5_14 = new Option("Bac +4 (Alternance)", "Bac +4 (Alternance)");
+      annee.add(opt5_11);
+      annee.add(opt5_12);
+      annee.add(opt5_13);
+      annee.add(opt5_14);
+
+
     } else if (champ1.value === "Maestris BTS") {
       var opt6_1 = new Option("BTS Communication", "BTS Communication");
       var opt6_2 = new Option("BTS Management commercial opérationnel", "BTS Management commercial opérationnel");
