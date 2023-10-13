@@ -195,9 +195,18 @@ function updateChamp() {
       var opt6_11 = new Option("Bac +1 (Alternance)", "Bac +1 (Alternance)");
       annee.add(opt6_11);
 
-      
+
     } else if (champ1.value === "Efet Studio Créa") {
-      var opt7_1 = new Option("Général", "Général");
+      var opt7_1 = new Option("Design graphique & numérique", "Design graphique & numérique");
       champ2.add(opt7_1);
+      var opt7_11 = new Option("Bac +1 (Initial)", "Bac +1 (Initial)");
+      var opt7_12 = new Option("Bac +2 (Alternance)", "Bac +2 (Alternance)");
+      var opt7_13 = new Option("Bac +3 (Alternance)", "Bac +3 (Alternance)");
+      var opt7_14 = new Option("Bac +4 (Alternance)", "Bac +4 (Alternance)");
+      annee.add(opt7_11);
+      annee.add(opt7_12);
+      annee.add(opt7_13);
+      annee.add(opt7_14);
+
     }
 }
