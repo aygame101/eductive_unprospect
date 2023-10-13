@@ -26,7 +26,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     // Stocker la valeur de l'identifiant saisie
     $identifiant_saisi = $identifiant;
 
-    // Vérifier si les identifiants sont corrects
+    // Vérifier si les identifiants sont corrects // Changer MDP
     if ($identifiant === "user472243" && hash('sha256', $mdp) === $PASSWORD_ONE) {
         // Réinitialiser le compteur de tentatives
         $_SESSION['login_attempts'] = 0;

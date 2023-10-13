@@ -39,6 +39,7 @@ label {
     margin-top: 20px;
     display: inline-block;
     box-sizing: border-box;
+    font-size: 17px;
 }
 
 #img_campus_eductive {
@@ -85,6 +86,11 @@ footer p a {
     margin-right: auto;
     width: 20%;
     margin-bottom: 150px;
+}
+
+.text_input_final {
+    margin-top: 35px;
+    font-size: 13px;
 }
 
 @media screen and (min-width: 700px) {

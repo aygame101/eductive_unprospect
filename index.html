@@ -7,6 +7,8 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/button.css">
 
+    <link rel="icon" type="image/x-icon" href="img/campus_eductive.png">
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
@@ -25,22 +27,34 @@
         <select name="ecole" id="ecole_id" onchange="updateChamp()" required>
             <option id="ppa" value="PPA">PPA</option>
             <option id="esupcom" value="Esupcom">Esupcom</option>
-            <option id="efab" value="efab">EFAB</option>
-            <option id="ppa_sport" value="PPA_sport">PPA Sport</option>
+            <option id="efab" value="EFAB">EFAB</option>
+            <option id="ppa_sport" value="PPA Sport">PPA Sport</option>
             <option id="esgi" value="ESGI">ESGI</option>
-            <option id="maestris_bts" value="Maestris_bts">Maestris BTS</option>
-            <option id="efet_studio_crea" value="Efet_studio_crea">Efet Studio Créa</option>
+            <option id="maestris_bts" value="Maestris BTS">Maestris BTS</option>
+            <option id="efet_studio_crea" value="Efet Studio Créa">Efet Studio Créa</option>
+            <option id="isa" value="ISA">ISA</option>
+            <option id="eiml" value="EIML">EIML</option>
+            <option id="modart" value="Modart">Modart</option>
+            <option id="isfj" value="ISFJ">ISFJ</option>
+        </select>
+
+        <!-- En quelle année souhaiteriez-vous candidater ? NOT WORKING FOR NOW -->
+        <label for="annee_id">En quelle année souhaiteriez-vous candidater ? <span class="etoiles_req">*</span></label>
+        <select name="annee_candidature" id="annee_id" required>
+            <option id="bac_1" value="Bac +1 (Alternance)">Bac +1 (Alternance)</option>
+            <option id="bac_2" value="Bac +2 (Alternance)">Bac +2 (Alternance)</option>
+            <option id="bac_3" value="Bac +3 (Alternance)">Bac +3 (Alternance)</option>
+            <option id="bac_4" value="Bac +4 (Alternance)">Bac +4 (Alternance)</option>
         </select>
 
         <label for="specialite_id">Spécialité choisie : <span class="etoiles_req">*</span></label>
         <select name="specialite" id="specialite_id" required>
-            <option value="Management Commercial (bac+1 à bac+3)">Management Commercial (bac+1 à bac+3)</option>
-            <option value="Marketing (bac+1 à bac+3)">Marketing (bac+1 à bac+3)</option>
-            <option value="Finance (bac+1 à bac+3)">Finance (bac+1 à bac+3)</option>
-            <option value="Conseil, Audit et controle de gestion (bac+1 à bac+3)">Conseil, Audit et controle de gestion (bac+1 à bac+3)</option>
-            <option value="RH (à partir de bac+3)">RH (à partir de bac+3)</option>
-            <option value="Supply Chain (à partir de bac+3)">Supply Chain (à partir de bac+3)</option>
-            <option value="Business Development (à partir de bac+4)">Business Development (à partir de bac+4)</option>
+            <option value="Management Commercial">Management Commercial</option>
+            <option value="Marketing">Marketing</option>
+            <option value="Ressources Humaines">Ressources Humaines</option>
+            <option value="Business Development (Bac +4)">Business Development (Bac +4)</option>
+            <option value="Supply Chain">Supply Chain</option>
+            <option value="Finance">Finance</option>
         </select>
 
         <label for="civilite_id">Civilité : <span class="etoiles_req">*</span></label>
@@ -73,23 +87,35 @@
         <label for="telephone_id">Numéro de téléphone : <span class="etoiles_req">*</span></label>
         <input type="number" onkeydown="return event.keyCode !== 69" name="telephone" id="telephone_id" required>
 
-        <label for="niv_etude_actuel_id">Niveau d'étude actuel :</label>
-        <input type="text" name="niv_etude_actuel" id="niv_etude_actuel_id">
+        <label for="niv_etude_actuel_id">Niveau d'étude actuel : <span class="etoiles_req">*</span></label>
+        <input type="text" name="niv_etude_actuel" id="niv_etude_actuel_id" required>
 
-        <label for="etab_actuel_id">Etablissement actuel :</label>
-        <input type="text" name="etab_actuel" id="etab_actuel_id">
+        <label for="etab_actuel_id">Etablissement actuel : <span class="etoiles_req">*</span></label>
+        <input type="text" name="etab_actuel" id="etab_actuel_id" required>
 
         <label for="projet_pro_id">Projet Professionnel :</label>
         <input type="text" name="projet_pro" id="projet_pro_id">
-        
 
-        <input class="le_bouton" type="submit" value="Valider">
+        <!-- A RELIER A LA BDD -->
+        <label for="concours_id">Je souhaite m'inscrire à une date de concours :</label>
+        <select name="concours" id="concours_id">
+            <option id="non_dispo" value="-">-</option>
+            <option id="21_oct" value="Samedi 21 Octobre 2023 (présentiel)">Samedi 21 Octobre 2023 (présentiel)</option>
+            <option id="25_oct" value="Mercredi 25 Octobre 2023 (distanciel)">Mercredi 25 Octobre 2023 (distanciel)</option>
+            <option id="4_nov" value="Samedi 4 Novembre 2023 (distanciel)">Samedi 4 Novembre 2023 (distanciel)</option>
+        </select>
+       
+        <!-- Acceptation traitement données par rapport RGPD -->
 
+        <p class="text_input_final">En soumettant ce formulaire, j'accepte que mes informations soient utilisées exclusivement
+            dans le cadre de ma demande et de la relation commerciale éthique et personnalisé qui pourrait en découler.</p>
+
+        <input id="input_final" class="le_bouton" type="submit" value="Valider">
 
     </form>
     
     <footer>
-        <p class="footer">Created with <span style="color: #ff0000">&hearts;</span> by <a id="a_footer" href="https://ginovalton.fr">www.ginovalton.fr</a></p>
+        <p class="footer">Created with <span style="color: #ff0000">&hearts;</span> by <a id="a_footer" href="https://ginovalton.fr">ginovalton.fr</a></p>
         <p>Take care.</p>
     </footer>
     

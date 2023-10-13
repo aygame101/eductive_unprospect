@@ -1,0 +1,6 @@
+# General
+.DS_Store
+
+# Fichiers dans admin
+admin/hera.php
+admin/hestia.php

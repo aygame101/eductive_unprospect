@@ -241,3 +241,24 @@ form {
     text-align: center;
     font-family: 'Open Sans', sans-serif;
 }
+
+/* Tableau */
+table {
+    margin-top: 50px;
+    border-collapse: collapse;
+    width: 100%;
+    max-width: 100%;
+    color: black;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 15px;
+    text-align: center;
+    align-self: center;
+    border-width: 1px;
+    border : 1px solid black;
+}
+
+tr, td, th {
+    background-color: #f2f2f2;
+    border : 1px solid black;
+}
+
