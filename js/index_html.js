@@ -208,6 +208,33 @@ function updateChamp() {
       annee.add(opt7_13);
       annee.add(opt7_14);
 
+    } else if (champ1.value === "ISA") {
+      var opt8_1 = new Option("BTS Audiovisuel - Option Gestion de production", "BTS Audiovisuel - Option Gestion de production");
+      var opt8_2 = new Option("BTS Audiovisuel - Option Image", "BTS Audiovisuel - Option Image");
+      var opt8_3 = new Option("BTS Audiovisuel - Option Son", "BTS Audiovisuel - Option Son");
+      var opt8_4 = new Option("BTS Audiovisuel - Option Montage", "BTS Audiovisuel - Option Montage");
+      champ2.add(opt8_1);
+      champ2.add(opt8_2);
+      champ2.add(opt8_3);
+      champ2.add(opt8_4);
+      var opt5_11 = new Option("Bac +1 (Alternance)", "Bac +1 (Alternance)");
+      var opt5_12 = new Option("Bac +2 (Alternance)", "Bac +2 (Alternance)");
+      annee.add(opt5_11);
+      annee.add(opt5_12);
+
+    } else if (champ1.value === "EIML") {
+      var opt8_1 = new Option("BTS Audiovisuel - Option Gestion de production", "BTS Audiovisuel - Option Gestion de production");
+      var opt8_2 = new Option("BTS Audiovisuel - Option Image", "BTS Audiovisuel - Option Image");
+      var opt8_3 = new Option("BTS Audiovisuel - Option Son", "BTS Audiovisuel - Option Son");
+      var opt8_4 = new Option("BTS Audiovisuel - Option Montage", "BTS Audiovisuel - Option Montage");
+      champ2.add(opt8_1);
+      champ2.add(opt8_2);
+      champ2.add(opt8_3);
+      champ2.add(opt8_4);
+      var opt5_11 = new Option("Bac +1 (Alternance)", "Bac +1 (Alternance)");
+      var opt5_12 = new Option("Bac +2 (Alternance)", "Bac +2 (Alternance)");
+      annee.add(opt5_11);
+      annee.add(opt5_12);
 
     }
 }
