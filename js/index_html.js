@@ -208,6 +208,7 @@ function updateChamp() {
       annee.add(opt7_13);
       annee.add(opt7_14);
 
+
     } else if (champ1.value === "ISA") {
       var opt8_1 = new Option("BTS Audiovisuel - Option Gestion de production", "BTS Audiovisuel - Option Gestion de production");
       var opt8_2 = new Option("BTS Audiovisuel - Option Image", "BTS Audiovisuel - Option Image");
@@ -222,6 +223,7 @@ function updateChamp() {
       annee.add(opt5_11);
       annee.add(opt5_12);
 
+
     } else if (champ1.value === "EIML") {
       var opt8_1 = new Option("Bachelor Marketing du Luxe (Initial)", "Bachelor Marketing du Luxe (Initial)");
       var opt8_2 = new Option("Bachelor Retail (Alternance)", "Bachelor Retail (Alternance)");
@@ -232,5 +234,15 @@ function updateChamp() {
       annee.add(opt5_11);
       annee.add(opt5_12);
 
+
+    } else if (champ1.value === "Modart") {
+      var opt8_1 = new Option("Bachelor Marketing du Luxe (Initial)", "Bachelor Marketing du Luxe (Initial)");
+      var opt8_2 = new Option("Bachelor Retail (Alternance)", "Bachelor Retail (Alternance)");
+      champ2.add(opt8_1);
+      champ2.add(opt8_2);
+      var opt5_11 = new Option("Bac +1", "Bac +1");
+      var opt5_12 = new Option("Bac +3", "Bac +3");
+      annee.add(opt5_11);
+      annee.add(opt5_12);
     }
 }
