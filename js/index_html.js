@@ -75,7 +75,8 @@ function updateChamp() {
     
     // Supprimer toutes les options existantes du champ2
     champ2.innerHTML = "";
-    
+    annee.innerHTML = "";
+
     // Ajouter les nouvelles options en fonction de la sélection du champ1
     if (champ1.value === "PPA") {
       var opt1_1 = new Option("Management Commercial", "Management Commercial");
@@ -104,10 +105,10 @@ function updateChamp() {
       var opt2_1 = new Option("Bachelor Tronc commun (Bac+1 à +2)", "Bachelor Tronc commun (Bac+1 à +2)");
       var opt2_2 = new Option("Bachelor Communication des entreprises et des marques (Bac+3)", "Bachelor Communication des entreprises et des marques (Bac+3)");
       var opt2_3 = new Option("Bachelor Communication digitale et publicité (Bac+3)", "Bachelor Communication digitale et publicité (Bac+3)");
-      var opt2_4 = new Option("Bachelor Evenementiel et Relations publiques (bac+3)", "Bachelor Evenementiel et Relations publiques (bac+3");
-      var opt2_5 = new Option("Mastère Communication des Marques et des Entreprises (bac+4 à bac+5)", "Mastère Communication des Marques et des Entreprises (bac+4 à bac+5)");
-      var opt2_6 = new Option("Mastère Communication Digitale et Publicité (bac+4 à bac+5)", "Mastère Communication Digitale et Publicité (bac+4 à bac+5)");
-      var opt2_7 = new Option("Mastère Communication Evenementielle (bac+4 à bac+5)", "Mastère Communication Evenementielle (bac+4 à bac+5)");
+      var opt2_4 = new Option("Bachelor Evénementiel et Relations publiques (Bac+3)", "Bachelor Evénementiel et Relations publiques (Bac+3");
+      var opt2_5 = new Option("Mastère Communication des Marques et des Entreprises (Bac+4)", "Mastère Communication des Marques et des Entreprises (Bac+4)");
+      var opt2_6 = new Option("Mastère Communication Digitale et Publicité (Bac+4)", "Mastère Communication Digitale et Publicité (Bac+4)");
+      var opt2_7 = new Option("Mastère Communication Evenementielle (Bac+4)", "Mastère Communication Evenementielle (Bac+4)");
       champ2.add(opt2_1);
       champ2.add(opt2_2);
       champ2.add(opt2_3);
@@ -115,6 +116,16 @@ function updateChamp() {
       champ2.add(opt2_5);
       champ2.add(opt2_6);
       champ2.add(opt2_7);
+      var opt2_10 = new Option("Bac +1 (Initial)", "Bac +1 (Initial)");
+      var opt2_11 = new Option("Bac +2 (Alternance)", "Bac +2 (Alternance)");
+      var opt2_12 = new Option("Bac +3 (Alternance)", "Bac +3 (Alternance)");
+      var opt2_13 = new Option("Bac +4 (Alternance)", "Bac +4 (Alternance)");
+      annee.add(opt2_10);
+      annee.add(opt2_11);
+      annee.add(opt2_12);
+      annee.add(opt2_13);
+
+
     } else if (champ1.value === "EFAB") {
       var opt3_1 = new Option("Bachelor Immobilier (bac+1 à bac+2)", "Bachelor Immobilier (bac+1 à bac+2)");
       var opt3_2 = new Option("BTS Professions Immobilieres (bac+1 à bac+2)", "BTS Professions Immobilieres (bac+1 à bac+2)");
