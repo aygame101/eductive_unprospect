@@ -1,6 +1,6 @@
- <!-- CRUD Affichage données BDD -->
+<!-- CRUD Affichage données BDD -->
 
- <?php
+<?php
 header("Content-Type: text/html;charset=UTF-8");
 //Connexion à la BDD
 require_once('hestia.php');
