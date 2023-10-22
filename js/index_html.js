@@ -229,9 +229,9 @@ function updateChamp() {
       champ2.add(opt8_3);
       champ2.add(opt8_4);
       var opt5_11 = new Option("Bac +1 (Alternance)", "Bac +1 (Alternance)");
-      var opt5_12 = new Option("Bac +2 (Alternance)", "Bac +2 (Alternance)");
+      // var opt5_12 = new Option("Bac +2 (Alternance)", "Bac +2 (Alternance)");
       annee.add(opt5_11);
-      annee.add(opt5_12);
+      // annee.add(opt5_12);
 
 
     } else if (champ1.value === "EIML") {
@@ -255,10 +255,13 @@ function updateChamp() {
 
 
     } else if (champ1.value === "ISFJ") {
-      var opt10_1 = new Option("Programme Journalisme", "Programme Journalisme");
+      var opt10_1 = new Option("Bachelor Journalisme", "Bachelor Journalisme");
+      var opt10_1 = new Option("Mastère Journalisme de Sport (Bac +4)", "Mastère Journalisme de Sport (Bac +4)");
+      var opt10_1 = new Option("Mastère Journalisme d'informations générales (Bac +4)", "Mastère Journalisme d'informations générales (Bac +4)");
       champ2.add(opt10_1);
       var opt10_11 = new Option("Bac +1 (Initial)", "Bac +1 (Initial)");
       var opt10_12 = new Option("Bac +3 (Alternance)", "Bac +3 (Alternance)");
+      var opt10_13 = new Option("Bac +4 (Alternance)", "Bac +4 (Alternance)");
       annee.add(opt10_11);
       annee.add(opt10_12);
     }
