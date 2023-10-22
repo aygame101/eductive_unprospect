@@ -34,6 +34,8 @@ $_SESSION['last_activity'] = time();
     <title>Exportation vers Excel</title>
     <link rel="stylesheet" href="../css/admin.css">
     <script src="../js/index_php.js"></script>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 
 <body>
