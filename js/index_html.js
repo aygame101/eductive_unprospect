@@ -199,7 +199,8 @@ function updateChamp() {
 
 
     } else if (champ1.value === "Efet Studio Créa") {
-      var opt7_1 = new Option("Design graphique & numérique", "Design graphique & numérique");
+      var opt7_2 = new Option("Design graphique & numérique", "Design graphique & numérique");
+      var opt7_1 = new Option("Bachelor 1 Design et architecture d'intérieur", "Bachelor 1 Design et architecture d'intérieur");
       champ2.add(opt7_1);
       var opt7_11 = new Option("Bac +1 (Initial)", "Bac +1 (Initial)");
       var opt7_12 = new Option("Bac +2 (Alternance)", "Bac +2 (Alternance)");
