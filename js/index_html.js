@@ -252,12 +252,12 @@ function updateChamp() {
 
 
     } else if (champ1.value === "Modart") {
-      var opt9_1 = new Option("Stylisme et modélisme", "Stylisme et modélisme");
+      var opt9_1 = new Option("Stylisme et modélisme (cycle francophone)", "Stylisme et modélisme (cycle francophone)");
       champ2.add(opt9_1);
       var opt9_11 = new Option("Bac +1 (Initial)", "Bac +1 (Initial)");
-      var opt9_12 = new Option("Bac +3 (Initial)", "Bac +3 (Initial)");
+      // var opt9_12 = new Option("Bac +3 (Initial)", "Bac +3 (Initial)");
       annee.add(opt9_11);
-      annee.add(opt9_12);
+      // annee.add(opt9_12);
 
 
     } else if (champ1.value === "ISFJ") {
