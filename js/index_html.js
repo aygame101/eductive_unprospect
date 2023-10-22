@@ -189,11 +189,17 @@ function updateChamp() {
       var opt6_1 = new Option("BTS Communication", "BTS Communication");
       var opt6_2 = new Option("BTS Management commercial opérationnel", "BTS Management commercial opérationnel");
       var opt6_3 = new Option("BTS Négociation et digitalisation de la relation client", "BTS Négociation et digitalisation de la relation client");
-      var opt6_6 = new Option("BTS Comptabilité et gestion", "BTS Comptabilité et gestion");
+      var opt6_4 = new Option("BTS Comptabilité et gestion", "BTS Comptabilité et gestion");
+      var opt6_5 = new Option("BTS BTS Banque", "BTS Banque");
+      var opt6_6 = new Option("BTS Assurance", "BTS Assurance");
+      var opt6_7 = new Option("BTS Support à l'Action Managériale", "BTS Support à l'Action Managériale");
       champ2.add(opt6_1);
       champ2.add(opt6_2);
       champ2.add(opt6_3);
+      champ2.add(opt6_4);
+      champ2.add(opt6_5);
       champ2.add(opt6_6);
+      champ2.add(opt6_7);
       var opt6_11 = new Option("Bac +1 (Alternance)", "Bac +1 (Alternance)");
       annee.add(opt6_11);
 
