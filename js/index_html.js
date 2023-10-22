@@ -83,12 +83,14 @@ function updateChamp() {
       var opt1_2 = new Option("Marketing", "Marketing");
       var opt1_3 = new Option("Ressources Humaines", "Ressources Humaines");
       var opt1_4 = new Option("Business Development (Bac +4)", "Business Development (Bac +4)");
-      var opt1_6 = new Option("Supply Chain", "Supply Chain");
-      var opt1_7 = new Option("Finance", "Finance");
+      var opt1_5 = new Option("Supply Chain", "Supply Chain");
+      var opt1_6 = new Option("Finance", "Finance");
+      var opt1_7 = new Option("International Business", "International Business");
       champ2.add(opt1_1);
       champ2.add(opt1_2);
       champ2.add(opt1_3);
       champ2.add(opt1_4);
+      champ2.add(opt1_5);
       champ2.add(opt1_6);
       champ2.add(opt1_7);
       var opt1_10 = new Option("Bac +1 (Alternance)", "Bac +1 (Alternance)");
