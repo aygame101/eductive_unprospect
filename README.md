@@ -8,3 +8,4 @@ Dispo sur [eductive.unprospect.fr] et [eductive.unprospect.fr/admin].
 
 [eductive.unprospect.fr]: https://eductive.unprospect.fr
 [eductive.unprospect.fr/admin]: https://eductive.unprospect.fr/admin
+

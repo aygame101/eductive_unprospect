@@ -27,7 +27,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $identifiant_saisi = $identifiant;
 
     // Vérifier si les identifiants sont corrects // Changer MDP
-    if ($identifiant === "user472243" && hash('sha256', $mdp) === $PASSWORD_ONE) {
+    if ($identifiant === $IDENTIFIANT_ONE && hash('sha256', $mdp) === $PASSWORD_ONE) {
         // Réinitialiser le compteur de tentatives
         $_SESSION['login_attempts'] = 0;
         $_SESSION['connected'] = true;
@@ -67,6 +67,8 @@ if ($_SESSION['login_attempts'] >= 5) {
     <title>Connexion</title>
     <link rel="stylesheet" href="../css/admin.css">
     <script src="../js/conn_php.js"></script>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body onload="masquerMessageErreur()">
     <h1 class="titre_conn">Connexion</h1>

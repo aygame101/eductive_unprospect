@@ -83,12 +83,14 @@ function updateChamp() {
       var opt1_2 = new Option("Marketing", "Marketing");
       var opt1_3 = new Option("Ressources Humaines", "Ressources Humaines");
       var opt1_4 = new Option("Business Development (Bac +4)", "Business Development (Bac +4)");
-      var opt1_6 = new Option("Supply Chain", "Supply Chain");
-      var opt1_7 = new Option("Finance", "Finance");
+      var opt1_5 = new Option("Supply Chain", "Supply Chain");
+      var opt1_6 = new Option("Finance", "Finance");
+      var opt1_7 = new Option("International Business", "International Business");
       champ2.add(opt1_1);
       champ2.add(opt1_2);
       champ2.add(opt1_3);
       champ2.add(opt1_4);
+      champ2.add(opt1_5);
       champ2.add(opt1_6);
       champ2.add(opt1_7);
       var opt1_10 = new Option("Bac +1 (Alternance)", "Bac +1 (Alternance)");
@@ -128,12 +130,14 @@ function updateChamp() {
 
     } else if (champ1.value === "EFAB") {
       var opt3_1 = new Option("BTS Professions Immobilieres (Bac+1)", "BTS Professions Immobilieres (Bac+1)");
+      var opt3_2 = new Option("BTS Collaborateur Juriste Notarial", "BTS Collaborateur Juriste Notarial");
       var opt3_3 = new Option("Bachelor Gestionnaire de Parcs Immobiliers (Bac+3)", "Bachelor Gestionnaire de Parcs Immobiliers (Bac+3)");
       var opt3_4 = new Option("Bachelor Conseiller en Investissement Immobilier (Bac+3)", "Bachelor Conseiller en Investissement Immobilier (Bac+3)");
       var opt3_5 = new Option("Bachelor Immobilier (Bac +1/2)", "Bachelor Immobilier (Bac +1/2)");
       var opt3_6 = new Option("Mastère Manager en Patrimoine Immobilier et Financier (Bac+4)", "Mastère Manager en Patrimoine Immobilier et Financier (Bac+4)");
       var opt3_7 = new Option("Mastère Manager d'Actifs Immobiliers (Bac+4)", "Mastère Manager d'Actifs Immobiliers (Bac+4)");
       champ2.add(opt3_1);
+      champ2.add(opt3_2);
       champ2.add(opt3_3);
       champ2.add(opt3_4);
       champ2.add(opt3_5);
@@ -187,17 +191,24 @@ function updateChamp() {
       var opt6_1 = new Option("BTS Communication", "BTS Communication");
       var opt6_2 = new Option("BTS Management commercial opérationnel", "BTS Management commercial opérationnel");
       var opt6_3 = new Option("BTS Négociation et digitalisation de la relation client", "BTS Négociation et digitalisation de la relation client");
-      var opt6_6 = new Option("BTS Comptabilité et gestion", "BTS Comptabilité et gestion");
+      var opt6_4 = new Option("BTS Comptabilité et gestion", "BTS Comptabilité et gestion");
+      var opt6_5 = new Option("BTS BTS Banque", "BTS Banque");
+      var opt6_6 = new Option("BTS Assurance", "BTS Assurance");
+      var opt6_7 = new Option("BTS Support à l'Action Managériale", "BTS Support à l'Action Managériale");
       champ2.add(opt6_1);
       champ2.add(opt6_2);
       champ2.add(opt6_3);
+      champ2.add(opt6_4);
+      champ2.add(opt6_5);
       champ2.add(opt6_6);
+      champ2.add(opt6_7);
       var opt6_11 = new Option("Bac +1 (Alternance)", "Bac +1 (Alternance)");
       annee.add(opt6_11);
 
 
     } else if (champ1.value === "Efet Studio Créa") {
-      var opt7_1 = new Option("Design graphique & numérique", "Design graphique & numérique");
+      var opt7_2 = new Option("Design graphique & numérique", "Design graphique & numérique");
+      var opt7_1 = new Option("Bachelor 1 Design et architecture d'intérieur", "Bachelor 1 Design et architecture d'intérieur");
       champ2.add(opt7_1);
       var opt7_11 = new Option("Bac +1 (Initial)", "Bac +1 (Initial)");
       var opt7_12 = new Option("Bac +2 (Alternance)", "Bac +2 (Alternance)");
@@ -207,6 +218,13 @@ function updateChamp() {
       annee.add(opt7_12);
       annee.add(opt7_13);
       annee.add(opt7_14);
+
+
+    } else if (champ1.value === "Efet Photographie") {
+      var opt7_1 = new Option("Bachelor Photographe", "Bachelor Photographe");
+      champ2.add(opt7_1);
+      var opt7_11 = new Option("Bac +1 (Initial)", "Bac +1 (Initial)");
+      annee.add(opt7_11);
 
 
     } else if (champ1.value === "ISA") {
@@ -219,9 +237,9 @@ function updateChamp() {
       champ2.add(opt8_3);
       champ2.add(opt8_4);
       var opt5_11 = new Option("Bac +1 (Alternance)", "Bac +1 (Alternance)");
-      var opt5_12 = new Option("Bac +2 (Alternance)", "Bac +2 (Alternance)");
+      // var opt5_12 = new Option("Bac +2 (Alternance)", "Bac +2 (Alternance)");
       annee.add(opt5_11);
-      annee.add(opt5_12);
+      // annee.add(opt5_12);
 
 
     } else if (champ1.value === "EIML") {
@@ -236,19 +254,22 @@ function updateChamp() {
 
 
     } else if (champ1.value === "Modart") {
-      var opt9_1 = new Option("Stylisme et modélisme", "Stylisme et modélisme");
+      var opt9_1 = new Option("Stylisme et modélisme (cycle francophone)", "Stylisme et modélisme (cycle francophone)");
       champ2.add(opt9_1);
       var opt9_11 = new Option("Bac +1 (Initial)", "Bac +1 (Initial)");
-      var opt9_12 = new Option("Bac +3 (Initial)", "Bac +3 (Initial)");
+      // var opt9_12 = new Option("Bac +3 (Initial)", "Bac +3 (Initial)");
       annee.add(opt9_11);
-      annee.add(opt9_12);
+      // annee.add(opt9_12);
 
 
     } else if (champ1.value === "ISFJ") {
-      var opt10_1 = new Option("Programme Journalisme", "Programme Journalisme");
+      var opt10_1 = new Option("Bachelor Journalisme", "Bachelor Journalisme");
+      var opt10_1 = new Option("Mastère Journalisme de Sport (Bac +4)", "Mastère Journalisme de Sport (Bac +4)");
+      var opt10_1 = new Option("Mastère Journalisme d'informations générales (Bac +4)", "Mastère Journalisme d'informations générales (Bac +4)");
       champ2.add(opt10_1);
       var opt10_11 = new Option("Bac +1 (Initial)", "Bac +1 (Initial)");
       var opt10_12 = new Option("Bac +3 (Alternance)", "Bac +3 (Alternance)");
+      var opt10_13 = new Option("Bac +4 (Alternance)", "Bac +4 (Alternance)");
       annee.add(opt10_11);
       annee.add(opt10_12);
     }
