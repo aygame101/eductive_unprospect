@@ -128,12 +128,14 @@ function updateChamp() {
 
     } else if (champ1.value === "EFAB") {
       var opt3_1 = new Option("BTS Professions Immobilieres (Bac+1)", "BTS Professions Immobilieres (Bac+1)");
+      var opt3_2 = new Option("BTS Collaborateur Juriste Notarial", "BTS Collaborateur Juriste Notarial");
       var opt3_3 = new Option("Bachelor Gestionnaire de Parcs Immobiliers (Bac+3)", "Bachelor Gestionnaire de Parcs Immobiliers (Bac+3)");
       var opt3_4 = new Option("Bachelor Conseiller en Investissement Immobilier (Bac+3)", "Bachelor Conseiller en Investissement Immobilier (Bac+3)");
       var opt3_5 = new Option("Bachelor Immobilier (Bac +1/2)", "Bachelor Immobilier (Bac +1/2)");
       var opt3_6 = new Option("Mastère Manager en Patrimoine Immobilier et Financier (Bac+4)", "Mastère Manager en Patrimoine Immobilier et Financier (Bac+4)");
       var opt3_7 = new Option("Mastère Manager d'Actifs Immobiliers (Bac+4)", "Mastère Manager d'Actifs Immobiliers (Bac+4)");
       champ2.add(opt3_1);
+      champ2.add(opt3_2);
       champ2.add(opt3_3);
       champ2.add(opt3_4);
       champ2.add(opt3_5);
@@ -207,6 +209,13 @@ function updateChamp() {
       annee.add(opt7_12);
       annee.add(opt7_13);
       annee.add(opt7_14);
+
+
+    } else if (champ1.value === "Efet Photographie") {
+      var opt7_1 = new Option("Bachelor Photographe", "Bachelor Photographe");
+      champ2.add(opt7_1);
+      var opt7_11 = new Option("Bac +1 (Initial)", "Bac +1 (Initial)");
+      annee.add(opt7_11);
 
 
     } else if (champ1.value === "ISA") {
